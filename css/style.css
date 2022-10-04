@@ -16,7 +16,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-ul {
+ul, li {
 	list-style: none;
 }
 
@@ -79,8 +79,8 @@ img {
 	position: relative;
 	display: flex;
 	z-index: 2;
-	margin: 100px auto;
-	padding: 51px 45px 0 45px;
+	margin: auto;
+	padding: 151px 45px 100px 45px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -123,7 +123,7 @@ footer {
 }
 
 section .section-inner {
-	max-width: 82%;
+	max-width: 85%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 5rem;
@@ -133,7 +133,7 @@ section .section-inner {
 }
 
 section .section-inner-2 {
-	max-width: 82%;
+	max-width: 85%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -168,16 +168,24 @@ video {
 	width: 100%;
 }
 .mobile{
+    margin-top: 1em;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
     position: relative;
+    height: auto;
 }
+
 .download {
-    position: absolute;
     background: #000;
     border: 3px solid var(--border-color);
     border-radius: 8px;
     position: absolute;
     width: 60%;
     margin: 0 auto;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
 }
 .download-inner {
     display: grid;
@@ -189,6 +197,19 @@ video {
     margin: 2px 5px;
 }
 
+button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 400px;
+	background: #999;
+	padding: 10px;
+}
+
+.faq li div span {
+	background: #777;
+	color: #fff;
+}
 /*footer*/
 .footer {
 	color: #737373;
