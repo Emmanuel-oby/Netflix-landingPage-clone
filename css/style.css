@@ -342,7 +342,7 @@ button {
 	color: #0071eb;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
 	.form{
 		display: flex;
 		flex-direction: column;
